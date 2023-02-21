@@ -3,7 +3,8 @@
 #include <stdlib.h>
 
 /**
- * main - This program assigns random number to variable and check if positive or negative
+ * main - This program assigns random number to variable
+ * and check if positive or negative
  * Return:0 when successfully exected
  */
 
@@ -11,22 +12,19 @@ int main(void)
 {
 	int n;
 
-	srand(time(0))
-		n = rand() - RAND_MAX / 2;
-	if (n > 0);
-
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
 	{
-		printf("%d is positive\n", n);
+		printf("This is a postive number: %d\n", n);
 	}
-
+	else if (n == 0)
 	{
-		else if (n == 0);
-		printf("%d is zero\n", n);
+		printf("This is zero: %d\n", n);
 	}
-
+	else
 	{
-		else
-			printf("%d is negative\n", n);
+		printf("The number is negative: %d\n", n);
 	}
-	return (0)
+	return (0);
 }
